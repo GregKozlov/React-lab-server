@@ -5,6 +5,16 @@ import { Response, Request } from "express-serve-static-core";
 import { Router } from "express";
 import Users from "../../models/users";
 
+// interface iUser {
+//     id: number;
+//     userName: string;
+//     password: string;
+//     email: string;
+//     info: string;
+//     createdAt: string;
+//     updatedAt: string;
+// }
+
 const authRouter = Router();
 
 authRouter.post(
@@ -48,10 +58,6 @@ authRouter.post(
         }
     },
 );
-
-// interface iUser {
-
-// }
 
 authRouter.post(
     "/signin",
