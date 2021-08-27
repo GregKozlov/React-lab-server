@@ -11,6 +11,7 @@ Users.init(
     {
         userName: DataTypes.STRING,
         password: DataTypes.STRING,
+        profileImage: DataTypes.STRING  ,
         email: DataTypes.STRING,
         info: DataTypes.STRING,
     },
