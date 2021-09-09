@@ -7,7 +7,7 @@ module.exports = {
                 id: Math.random() * 1000,
                 gameName: "Warcraft III",
                 genre: "RTS",
-                age: 30,
+                age: 3,
                 price: 7,
                 rating: 5,
                 description:
