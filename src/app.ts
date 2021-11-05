@@ -12,6 +12,7 @@ import bodyParser from "body-parser";
 import { index } from "./routes/index";
 import gamesRouter from "./routes/games";
 import profRouter from "./routes/profile";
+import adminEditRouter from "./routes/adminEdit";
 
 // import { getGames } from "./controllers/getGame";
 
@@ -25,6 +26,7 @@ app.use(bodyParser.json());
 app.use(express.urlencoded({ extended: true }));
 app.use("/auth", authRouter);
 app.use("/api/profile", profRouter);
+app.use("/api/admin", adminEditRouter);
 
 app.use("/api/games", gamesRouter);
 // Express configuration
